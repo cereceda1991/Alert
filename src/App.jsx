@@ -17,7 +17,7 @@ function App() {
     const showNotification = (message, type) => {
       toast[type](message, {
         position: toast.POSITION.TOP_RIGHT,
-        autoClose: false,
+        autoClose: 60000, // Temporizador a 1 minuto
         closeOnClick: false,
         draggable: false,
       });
